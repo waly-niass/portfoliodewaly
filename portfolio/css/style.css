@@ -1,0 +1,202 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f1e9;
+    /* beige clair */
+    color: #222;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* NAV */
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* effet underline animé */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: beige;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("../images/bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* BOUTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: beige;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* SECTION PROJETS */
+.projets {
+    padding: 60px 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projet {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.projet:hover {
+    transform: translateY(-10px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about li {
+    margin: 10px;
+}
+
+.projet img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* HERO */
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* PROJETS */
+    .projets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projet {
+        width: 90%;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 20px;
+    }
+
+    /* FORMULAIRE */
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
