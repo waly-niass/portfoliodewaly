@@ -1,29 +1,81 @@
-<h2>Contact</h2>
+<!DOCTYPE html>
+<html lang="fr">
 
-<form>
-    <label>Nom :</label>
-    <input type="text" required>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-    <label>Email :</label>
-    <input type="email" required>
+<body>
 
-    <label>Message :</label>
-    <textarea required></textarea>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <button type="submit">Envoyer</button>
-</form>
+    <section class="contact-container">
 
-<h2>Demande de projet</h2>
+        <!-- FORMULAIRE CONTACT -->
+        <div class="form-box">
+            <h2>Me contacter</h2>
+            <form>
+                <label>Nom</label>
+                <input type="text" required>
 
-<form>
-    <label>Nom :</label>
-    <input type="text" required>
+                <label>Email</label>
+                <input type="email" required>
 
-    <label>Email :</label>
-    <input type="email" required>
+                <label>Message</label>
+                <textarea required></textarea>
 
-    <label>Description du projet :</label>
-    <textarea required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
 
-    <button type="submit">Envoyer</button>
-</form>
+        <!-- FORMULAIRE DEMANDE DE PROJET -->
+        <div class="form-box">
+            <h2>Demande de projet</h2>
+            <form>
+                <label>Nom</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Type de projet</label>
+                <select required>
+                    <option>Site web</option>
+                    <option>Application</option>
+                    <option>E-commerce</option>
+                </select>
+
+                <label>Description</label>
+                <textarea required></textarea>
+
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+
+        <!-- FORMULAIRE RECHERCHE -->
+        <div class="form-box">
+            <h2>Rechercher un projet</h2>
+            <form>
+                <label>Mot-clé</label>
+                <input type="text" placeholder="ex: e-commerce">
+
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
