@@ -226,3 +226,35 @@ footer {
 .tech-icons img {
     width: 60px;
 }
+
+/* Section technologies */
+#technologies {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#technologies h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* espace entre les icônes */
+}
+
+.tech-icons img {
+    width: 60px;
+    /* taille uniforme */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2);
+    /* effet zoom au survol */
+}
